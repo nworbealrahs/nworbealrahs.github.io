@@ -42,8 +42,118 @@ a:hover, a:active {
 <style>body {  background-color: #5b9cef;  margin: 0 10%;  font-family: sans-serif;  }h1 {  text-align: center;  font-family: serif;  font-weight: normal;  text-transform: uppercase;  border-bottom: 1px solid #57b1dc;  margin-top: 30px;}h2 {  color: #ffffff;  font-size: 1em;}</style>
 <!-- Form -->
 <!DOCTYPE html><html><head>  <title>More about you</title>  <meta charset="utf-8"></head><body>  
-  <h1>Mailing List Signup</h1>   <form action="/mailinglist.php" method="POST">    <fieldset>      <legend>Join our email list</legend>     
-  <p>All fields are required.</p>      <ol>       
-  <li><label for="firstlast">Name:</label>         <input type="text" name="fullname" id="firstlast"></li>
-  <li><label for="email">Email:</label>         <input type="text" name="email" id="email"></li>      </ol>      
-  <input type="submit" value="Submit">    </fieldset>  </form>  </body></html> 
+  <h1>Optional Form</h1>   <form action="/mailinglist.php" method="POST">    <fieldset>      <legend>Join our email list</legend> 
+  <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Your first name"><br>
+  
+   <label for="fname">Middle name:</label><br>
+  <input type="text" id="fname" name="fname" value="Optional "><br>
+  
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Your last name"><br>
+  
+   <label for="fname">Email Adress:</label><br>
+  <input type="text" id="fname" name="fname" value="Your email adress"><br>
+  
+
+  <p>What is your age?</p>
+
+  <input type="radio" id="18" name="Age" value="18">
+  <label for="18">Younger than 18</label><br>
+  
+  <input type="radio" id="between" name="Age" value="BETWEEN">
+  <label for="between">Between 18 and 25</label><br>
+  
+  <input type="radio" id="older" name="Age" value="OLDER">
+  <label for="older">Older than 25</label>
+      
+     
+    <p>What websites have you used?</p>
+  
+   <input type="checkbox" id="amazon" name="website" value="amazon">
+  <label for="amazon"> Amazon</label><br>
+  
+  <input type="checkbox" id="autozone" name="website" value="autozone">
+  <label for="autozone"> Autozone</label><br>
+  
+  <input type="checkbox" id="youtube" name="website" value="youtube">
+  <label for="youtube"> Youtube</label><br>
+  
+    <p>Have you, will you, or are you attending college?</p>
+    
+     <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">Yes</label><br>
+  
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">No</label><br>
+  
+      <p>If you answered yes to the previous question, for what major?</p>
+      
+      <label for="fname">College Major:</label><br>
+  <input type="text" id="fname" name="fname" value="Computer Science"><br>
+  
+        <p>Have you ever taken any of the following tests?</p>
+
+<input type="checkbox" id="ap" name="test" value="ap">
+  <label for="ap"> AP </label><br>
+  
+  <input type="checkbox" id="clep" name="test" value="clep">
+  <label for="clep"> CLEP</label><br>
+  
+  <input type="checkbox" id="dsst" name="test" value="dsst">
+  <label for="dsst"> DSST</label><br>
+  
+          <p>Do you prefer baking cookies or muffins?</p>
+          
+            <input type="radio" id="cookie" name="bake" value="cookie">
+  <label for="cookie">I prefer baking cookies.</label><br>
+  
+  <input type="radio" id="muffin" name="bake" value="muffin">
+  <label for="muffin">I prefer baking muffins.</label><br>
+  
+  <input type="radio" id="nocookies" name="bake" value="co">
+  <label for="nocookies">Ive never baked cookies.</label><br>
+  
+    <input type="radio" id="nomuffins" name="bake" value="mu">
+  <label for="nomuffins">Ive never baked muffins.</label><br>
+  
+  <input type="radio" id="neither" name="bake" value="none">
+  <label for="neither">Ive never baked cookies or muffins.</label><br>
+  
+ <p>Do you like the Scion frs, Toyota 86, or Subaru BRZ the most?</p>
+ 
+ <input type="radio" id="scion" name="car" value="s">
+  <label for="scion">Scion frs</label><br>
+  
+  <input type="radio" id="toyota" name="car" value="t">
+  <label for="toyota">Toyota 86</label><br>
+  
+  <input type="radio" id="subaru" name="car" value="su">
+  <label for="subaru">Subaru BRZ</label><br>
+  
+   <p>Do you own a home or rent?</p>
+   
+    <input type="radio" id="home" name="living" value="h">
+  <label for="home">I'm a home owner</label><br>
+  
+  <input type="radio" id="rent" name="living" value="r">
+  <label for="rent">I'm renting a place to live</label><br>
+  
+  <input type="radio" id="homeless" name="living" value="ho">
+  <label for="homeless">I'm homeless</label><br>
+   
+   <p>Would you like to recieve information about affordable housing?></p><br>
+   
+   <input type="radio" id="yess" name="help" value="yes">
+  <label for="yess">Yes</label><br>
+  
+    <label for="fname">Phone Number:</label><br>
+  <input type="text" id="fname" name="fname" value="333-333-3333"><br>
+  
+  
+  <input type="radio" id="noo" name="help" value="no">
+  <label for="noo">No</label><br>
+  
+   
+  </body></html> 
