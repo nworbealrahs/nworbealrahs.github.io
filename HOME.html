@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+<head>
+
 <html>
    <!-- Makes website background blue and sub headers white -->
    <style>
@@ -20,7 +24,7 @@
    
    <head>
       <meta charset="utf-8">
-      <title>Gallery</title>
+      <title>Home</title>
       <link rel="stylesheet" href="topnav.css">
    </head>
    <body>
@@ -61,46 +65,128 @@ a:hover, a:active {
 </style>
 </head>
 
-<!-- Slideshow container -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<h2></h2>
+<p></p>
+
 <div class="slideshow-container">
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="https://user-images.githubusercontent.com/108848633/180792592-7fea303c-7203-4132-be89-4c15953e5679.png" width = "200" height = "200">
-    <div class="text">Caption Text</div>
-  </div>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://user-images.githubusercontent.com/108848633/180887409-bd4ede96-b6ce-4e64-93ce-9ef3d8b4c2e9.png" width ="400" height = "400">
+  <div class="text">Caption Text</div>
+</div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="https://user-images.githubusercontent.com/108848633/180793394-c942bc7c-ddc7-4917-82e8-0d01a60a5659.png" width = "200" height = "200">
-    <div class="text">Caption Two</div>
-  </div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://user-images.githubusercontent.com/108848633/180887493-f34ffc2a-ad44-4ffd-aa07-083defe16841.png" width ="400" height = "400">
+  <div class="text">Caption Two</div>
+</div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="https://user-images.githubusercontent.com/108848633/180793552-a6bf4eb3-f48a-4401-bc67-6eadd4c73a88.png" width = "200" height = "200">
-    <div class="text">Caption Three</div>
-  </div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://user-images.githubusercontent.com/108848633/180887548-e324fb34-0559-49a0-ac46-f0dccbf721ee.png" width ="400" height = "400">
+  <div class="text">Caption Three</div>
+</div>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
 
-<!-- The dots/circles -->
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
 </div>
 
+<script>
+let slideIndex = 0;
+showSlides();
 
-               
-                              
-</body>   
-<html>   
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
 
-   
-
+</body>
+</html> 
