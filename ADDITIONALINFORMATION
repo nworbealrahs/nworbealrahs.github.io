@@ -1,1 +1,63 @@
+<html>
+   <!-- Makes website background blue and sub headers white -->
+   <style>
+      body {background-color: #979797;
+      width: 1500px;
+      padding: 100px;
+      border: 5px solid black;
+      margin:100px;
+      text-align: center;}
+      font-family: sans-serif;  }
+      h1 {  
+         font-size: 300px;
+         text-align: center;  
+         font-family: serif;  
+         font-weight: normal;  
+         text-transform: uppercase;  
+         border-bottom: 1px solid #57b1dc; 
+         margin-top: 30px;}
+   </style>
+   
+   <head>
+      <meta charset="utf-8">
+      <title>Gallery</title>
+      <link rel="stylesheet" href="topnav.css">
+   </head>
+   <body>
+      <nav id="topnav">
+         <a id="logo" class="nav-link" href="nworbealrahs.github.io/HOME.html">ⓈⒽⒶⓇⓁⒶⒺ</a>
+         <a class="nav-link" href="https://nworbealrahs.github.io/">ABOUT</a>
+         <a class="nav-link" href="nworbealrahs.github.io/PPE.html">PPE</a>
+         <a class="nav-link" href="nworbealrahs.github.io/PRODUCTS.html">PRODUCTS</a>
+         <a class="nav-link" href="nworbealrahs.github.io/PROJECTS.html">PROJECTS</a>
+         <a class="nav-link" href="nworbealrahs.github.io/STORES.html">STORES</a>
+         <a class="nav-link" href="nworbealrahs.github.io/ADDITIONALINFORMATION">ADDITIONAL INFORMATION</a>
+      </nav>
+   </body>
+</html>
 
+
+
+
+
+<!-- Main page header -->
+<h1>ADDITIONAL INFORMATION!</h1>
+
+<!-- Makes link buttons pink with white text -->
+      <style>
+a:link, a:visited {
+  background-color: #F389E8;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: pink;
+}
+</style>
+</head>
+ </body>
+</html>   
