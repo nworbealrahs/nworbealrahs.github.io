@@ -1,7 +1,11 @@
 <html>
    <!-- Makes website background blue and sub headers white -->
    <style>
-      body {background-color: #979797;
+       body {
+	background-image: url('https://user-images.githubusercontent.com/108848633/180891938-ccc836e5-ac5d-4867-a522-e83b5ab80347.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  	background-size: cover;
       width: 1500px;
       padding: 100px;
       border: 5px solid black;
@@ -25,13 +29,13 @@
    </head>
    <body>
       <nav id="topnav">
-         <a id="logo" class="nav-link" href="nworbealrahs.github.io/HOME.html">ⓈⒽⒶⓇⓁⒶⒺ</a>
+         <a id="logo" class="nav-link" href="https://nworbealrahs.github.io/HOME.html">ⓈⒽⒶⓇⓁⒶⒺ</a>
          <a class="nav-link" href="https://nworbealrahs.github.io/">ABOUT</a>
-         <a class="nav-link" href="nworbealrahs.github.io/PPE.html">PPE</a>
-         <a class="nav-link" href="nworbealrahs.github.io/PRODUCTS.html">PRODUCTS</a>
-         <a class="nav-link" href="nworbealrahs.github.io/PROJECTS.html">PROJECTS</a>
-         <a class="nav-link" href="nworbealrahs.github.io/STORES.html">STORES</a>
-         <a class="nav-link" href="nworbealrahs.github.io/ADDITIONALINFORMATION">ADDITIONAL INFORMATION</a>
+         <a class="nav-link" href="https://nworbealrahs.github.io/PPE.html">PPE</a>
+         <a class="nav-link" href="https://nworbealrahs.github.io/PRODUCTS.html">PRODUCTS</a>
+         <a class="nav-link" href="https://nworbealrahs.github.io/PROJECTS.html">PROJECTS</a>
+         <a class="nav-link" href="https://nworbealrahs.github.io/STORES.html">STORES</a>
+         <a class="nav-link" href="https://nworbealrahs.github.io/ADDITIONALINFORMATION">ADDITIONAL INFORMATION</a>
       </nav>
    </body>
 </html>
