@@ -241,7 +241,7 @@ a:hover, a:active {
 	  <input type="radio" id="yes" name="book" value="yes">
 	<label for="yess">Yes</label><br>
 	  
-	  
+	  <head>
 	  <title>Test</title>
 <body>
     <form name="TESTING">
@@ -261,7 +261,6 @@ a:hover, a:active {
 </tr>
 <th>
 PRICE:<output name = "PRICE1"></output>
-
 <th>
 <h3>DISCOUNT</h3>
 <P>15% OFF</P>
@@ -281,8 +280,6 @@ DISCOUNT AMOUNT:<output name = "DISCOUNTEDTOTAL"></output>
 </form>
 
 <script type="text/javascript">
-var price = USERINPUT1*10
-    var discountam = price*0.15
 function calculateprice() {
         var USERINPUT1 = document.TESTING.QUANTITY.value,
             RESULT = (USERINPUT1*10);
@@ -301,7 +298,6 @@ function calculateprice() {
         	document.TESTING.DISCOUNTEDTOTAL.value = RESULT;
     }
     
-</script>
 </body>
 </html>
 
@@ -331,7 +327,7 @@ function calculateprice() {
     <html>
    <head>
       <script>
-         //function that display value
+       //function that display value
          function dis(val)
          {
              document.getElementById("result").value+=val
@@ -366,7 +362,7 @@ function calculateprice() {
          background-color:pink;
          color: black;
          border: solid black 2px;
-         width:100%
+         width:100
          }
   
          input[type="text"]
