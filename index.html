@@ -236,6 +236,86 @@ a:hover, a:active {
   
   <input type="radio" id="noo" name="help" value="no">
   <label for="noo">No</label><br>
+	  
+	     <p>Would you like to purchase my book?</p><br>
+	  <input type="radio" id="yes" name="book" value="yes">
+	<label for="yess">Yes</label><br>
+	  
+	  
+	  <title>Test</title>
+<body>
+    <form name="TESTING">
+    <table border="1" width="600" height="200" cellpadding="10" cellspacing="7">
+ <tr>
+<th colspan="6">
+<h1>PURCHASE PRICE CALCULATOR</h1>
+</th>
+</tr>
+<tr>  
+<th>
+<h3>QUANTITY</h3>
+<input type="number" name="QUANTITY" id="quantity">
+</th>
+<th>
+<button type="button" name="CALCULATE" id="calculate" onclick="calculateprice();">CALCULATE TOTAL</button>
+</tr>
+<th>
+PRICE:<output name = "PRICE1"></output>
+
+<th>
+<h3>DISCOUNT</h3>
+<P>15% OFF</P>
+<input type="checkbox" name="DISCOUNT1" id="discount"onclick="calculatediscount();"/>
+<tr>
+<th colspan="2">
+DISCOUNT AMOUNT:<output name = "DISCOUNTAMOUNT"></output>
+<tr>
+<th colspan="2">
+<button type="button" name="CALCULATE" id="calculate" onclick="calcdiscounttotal();">CALCULATE DISCOUNTED TOTAL</button>
+<tr>
+<th colspan="2">
+DISCOUNT AMOUNT:<output name = "DISCOUNTEDTOTAL"></output>
+
+
+</table>
+</form>
+
+<script type="text/javascript">
+var price = USERINPUT1*10
+    var discountam = price*0.15
+function calculateprice() {
+        var USERINPUT1 = document.TESTING.QUANTITY.value,
+            RESULT = (USERINPUT1*10);
+        	document.TESTING.PRICE1.value = RESULT;
+    }
+    
+    function calculatediscount() {
+        var USERINPUT2 = document.TESTING.PRICE1.value,
+            RESULT = (USERINPUT2*0.15 );
+        	document.TESTING.DISCOUNTAMOUNT.value = RESULT;
+    }
+    
+    function calcdiscounttotal() {
+        var USERINPUT2 = document.TESTING.PRICE1.value,
+            RESULT = (USERINPUT2 - USERINPUT2*0.15);
+        	document.TESTING.DISCOUNTEDTOTAL.value = RESULT;
+    }
+    
+</script>
+</body>
+</html>
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	<input type="radio" id="no" name="book" value="no">
+  	<label for="no">No</label><br>
+
+	  
   
     <!-- Form submit button -->
 
