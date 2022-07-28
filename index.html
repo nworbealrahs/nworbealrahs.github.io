@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
+<body>
+
+
+
+
+
+
+
+
+
+
 
 <html>
    <!-- Makes website background blue and sub headers white -->
@@ -105,19 +115,57 @@ a:hover, a:active {
 <img src="https://user-images.githubusercontent.com/108848633/180895117-e4874ed8-471b-4bc5-bc6b-bb1459ec5db4.png" width = "300" height="300" alt="">
 
 
-<!-- Form  background-color: #5b9cef -->
-<!DOCTYPE html><html><head>  <title> </title>  <meta charset="utf-8"></head><body>  
-  <h1>Optional Form</h1>   <form action="/mailinglist.php" method="POST">    <fieldset>      <legend>Join our email list</legend> 
-  <form style = "background:url(https://user-images.githubusercontent.com/108848633/181300391-959e64a8-b2e2-4f6b-a3a0-5fc3d195029c.png) background-repeat; no-repeat; background-size; cover; >
-    
-    <!-- asks user for first name -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>OPTIONAL FORM Forms</h2>
+<form action="/action_page.php" 
+form style = "background:url(https://user-images.githubusercontent.com/108848633/181300391-959e64a8-b2e2-4f6b-a3a0-5fc3d195029c.png)
+background-repeat; no repeat; background-size:cover height : 200 ; width; 600px">
+  <!-- asks user for first name -->
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value="Your first name"><br>
- 
     <!-- Asks user for middle name -->
    <label for="fname">Middle name:</label><br>
   <input type="text" id="fname" name="fname" value="Optional "><br>
-  
     <!-- Asks user for last name -->
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname" value="Your last name"><br>
@@ -240,19 +288,70 @@ a:hover, a:active {
 	     <p>Would you like to purchase my book?</p><br>
 	  <input type="radio" id="yes" name="book" value="yes">
 	<label for="yess">Yes</label><br>
-	  
-			 
-			 
-			 
-			 
-			 <html>
-			 <body>
-	  <head>
-	  <title>Test</title>
+    
+  <input type="radio" id="no" name="book" value="no">
+  	<label for="no">No</label><br>
+<input type="submit" value="Submit">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</form>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+<!--PURCHASE CALC PURCHASE CALCPURCHASE CALCPURCHASE PURCHASE CALC-->
+
+ <title>Test</title>
+<body>
+<form name="TESTING">
+<table >
+   
+   
+   
+   
+   <title>Test</title>
 <body>
     <form name="TESTING">
-    <table border="1" width="600" height="200" cellpadding="10" cellspacing="7" table style = "background:url(https://user-images.githubusercontent.com/108848633/181299245-cea5437c-2c42-43dc-9f01-ee2967e3bdb3.png); backgroun-repeat; no repeat; background-size:cover height : 200 ; width; 600px" >
+    <table border="1" width="600" height="200" cellpadding="10" cellspacing="7" table style = "background-color: #7075e2" >
  <tr>
+ 
+ 
+ 
+ 
 <th colspan="6">
 <h1>PURCHASE PRICE CALCULATOR</h1>
 </th>
@@ -280,12 +379,11 @@ DISCOUNT AMOUNT:<output name = "DISCOUNTAMOUNT"></output>
 <tr>
 <th colspan="2">
 DISCOUNT AMOUNT:<output name = "DISCOUNTEDTOTAL"></output>
-
-
 </table>
 </form>
-
 <script type="text/javascript">
+var price = USERINPUT1*10
+    var discountam = price*0.15
 function calculateprice() {
         var USERINPUT1 = document.TESTING.QUANTITY.value,
             RESULT = (USERINPUT1*10);
@@ -299,131 +397,62 @@ function calculateprice() {
     }
     
     function calcdiscounttotal() {
-        var USERINPUT2 = document.TESTING.PRICE1.value,
-            RESULT = (USERINPUT2 - USERINPUT2*0.15);
+        var USERINPUT1 = document.TESTING.PRICE1.value,
+            RESULT = (USERINPUT1 - USERINPUT1*0.15);
         	document.TESTING.DISCOUNTEDTOTAL.value = RESULT;
     }
-	</script>
-			      </body>
-			      </html>
-			      
-			      </body>
-			      </html>
-
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	<input type="radio" id="no" name="book" value="no">
-  	<label for="no">No</label><br>
-
-	  
-  
-    <!-- Form submit button -->
-
-    <form action="/action_page.php">
-  <input type="submit" value="Submit">
-</form>
     
-    <!-- tells user about soon to be new features of website -->
-
-    <h2>COMING SOON</h2><br>
-
-       <p>Form will soon allow for calculating the correct baking ingredient amounts for muffins. Stay tuned for a new form design. ></p><br>
-    <html>
-   <head>
-      <script>
-       //function that display value
-         function dis(val)
-         {
-             document.getElementById("result").value+=val
-         }
-           
-         //function that evaluates the digit and return result
-         function solve()
-         {
-             let x = document.getElementById("result").value
-             let y = eval(x)
-             document.getElementById("result").value = y
-         }
-           
-         //function that clear the display
-         function clr()
-         {
-             document.getElementById("result").value = ""
-         }
-      </script>
-      <!-- for styling -->
-      <style>
-         .title{
-         margin-bottom: 10px;
-         text-align:center;
-         width: 210px;
-         color:blue;
-         border: solid black 2px;
-         }
-  
-         input[type="button"]
-         {
-         background-color:pink;
-         color: black;
-         border: solid black 2px;
-         width:100
-         }
-  
-         input[type="text"]
-         {
-         background-color:white;
-         border: solid black 2px;
-         width:100%
-         }
-      </style>
-   </head>
-  
-      <table border="1">
-         <tr>
-            <td colspan="3"><input type="text" id="result"/></td>
-            <!-- clr() function will call clr to clear all value -->
-            <td><input type="button" value="c" onclick="clr()"/> </td>
-         </tr>
-         <tr>
-            <!-- create button and assign value to each button -->
-            <!-- dis("1") will call function dis to display value -->
-            <td><input type="button" value="1" onclick="dis('1')"/> </td>
-            <td><input type="button" value="2" onclick="dis('2')"/> </td>
-            <td><input type="button" value="3" onclick="dis('3')"/> </td>
-            <td><input type="button" value="/" onclick="dis('/')"/> </td>
-         </tr>
-         <tr>
-            <td><input type="button" value="4" onclick="dis('4')"/> </td>
-            <td><input type="button" value="5" onclick="dis('5')"/> </td>
-            <td><input type="button" value="6" onclick="dis('6')"/> </td>
-            <td><input type="button" value="-" onclick="dis('-')"/> </td>
-         </tr>
-         <tr>
-            <td><input type="button" value="7" onclick="dis('7')"/> </td>
-            <td><input type="button" value="8" onclick="dis('8')"/> </td>
-            <td><input type="button" value="9" onclick="dis('9')"/> </td>
-            <td><input type="button" value="+" onclick="dis('+')"/> </td>
-         </tr>
-         <tr>
-            <td><input type="button" value="." onclick="dis('.')"/> </td>
-            <td><input type="button" value="0" onclick="dis('0')"/> </td>
-            <!-- solve function call function solve to evaluate value -->
-            <td><input type="button" value="=" onclick="solve()"/> </td>
-            <td><input type="button" value="*" onclick="dis('*')"/> </td>
-         </tr>
-      </table>
-   </body>
-</html>   
-
-</head>
-
-
 </script>
 
+
+ <!--PURCHASE CALC PURCHASE CALCPURCHASE CALCPURCHASE PURCHASE CALC-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </body>
+</html>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
-</html> 
+</html>
+
